@@ -274,29 +274,34 @@
 
 .about__text {
   font-size: 20px;
-  width: 690px;
+  line-height: 24px;
+  margin-right: 1px;
+  /*width: 690px;*/
 }
 
 .about_white_space {
   margin-bottom: 24px;
+  margin-right: 4px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   padding-left: 50px;
   /*margin-left: 50px;*/
   padding-right: 50px;
-  padding-bottom: 88px;
+  /*padding-bottom: 88px;*/
 }
 
 .footer__menu {
   text-align: center;
+  /*align-self: start;*/
 }
 
 .footer__menu-list {
   list-style: none;
+
 }
 
 .footer__menu-list-item {
