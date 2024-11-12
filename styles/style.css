@@ -9,7 +9,6 @@
   margin: 92px 24px 94px 24px;
   display: grid;
   grid-template-columns: 454px auto 240.52px;
-  font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
@@ -28,15 +27,15 @@
   gap: 30px;
 }
 
-.menu_item_active {
+.header_menu_item_active {
   list-style: none;
 }
 
-.menu_item .menu_link_active {
+.header_menu_item .menu_link_active {
   text-decoration: none;
 }
 
-.logo {
+.header__logo-image {
   height: 105px;
   width: 148px;
   place-items: center;
@@ -278,6 +277,10 @@
   width: 690px;
 }
 
+.about_white_space{
+  margin-bottom: 24px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -285,7 +288,7 @@
   padding-left: 50px;
   /*margin-left: 50px;*/
   padding-right: 50px;
-  /*margin-bottom: 88px;*/
+  padding-bottom: 88px;
 }
 
 .footer__menu {
