@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-  height: 105px;
+  min-height: 105px;
   margin: 92px 24px 94px 24px;
   display: grid;
   grid-template-columns: 454px auto 240.52px;
@@ -10,7 +10,7 @@
 }
 
 .header_menu {
-  width: 391.48px;
+  min-width: 391.48px;
   margin: 44px 634px 39px 26.52px;
 }
 .header__links-list {
@@ -36,7 +36,7 @@
 
 .contacts {
   width: 240.52px;
-  height: 98px;
+  /*height: 98px;*/
   font-size: 18px;
   /* or 135% */
   letter-spacing: 0.01em;
@@ -51,7 +51,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 757px;
-  margin-bottom: 179px;
+  /*margin-bottom: 179px;*/
 }
 
 .overlay {
@@ -67,7 +67,6 @@
   width: 100%;
   padding-top: 165px;
   color: white;
-  font-weight: 700;
   font-size: 100px;
   line-height: 120px;
   text-transform: uppercase;
@@ -151,8 +150,8 @@
 }
 
 .lost__card-list-item {
-  height: 563px;
-  width: 334px;
+  min-height: 563px;
+  min-width: 334px;
   flex-grow: 1;
 }
 
@@ -253,7 +252,6 @@
 
 .about__title {
   margin: 135px 0 100px;
-  font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   text-transform: uppercase;
@@ -262,7 +260,6 @@
 
 .about__text {
   font-size: 20px;
-  line-height: 24px;
   letter-spacing: 0.005em;
   /*width: 690px;*/
 }
