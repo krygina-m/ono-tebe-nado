@@ -6,7 +6,6 @@
   grid-template-columns: 454px auto 240.52px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.13px;
   text-align: left;
 }
 
@@ -43,7 +42,8 @@
   letter-spacing: 0.01em;
   font-style: normal;
   justify-self: end;
-  margin-right: 30px;
+  align-self: center;
+  margin-right: 23px;
 }
 
 .cover {
@@ -65,7 +65,7 @@
 
 .cover-title {
   width: 100%;
-  padding: 165px 35px 0 50px;
+  padding-top: 165px;
   color: white;
   font-weight: 700;
   font-size: 100px;
@@ -76,7 +76,7 @@
 
 .aligned-text {
   display: block;
-  
+  padding-left: 50px;
 }
 
 .aligned-text_center {
@@ -87,6 +87,7 @@
 .aligned-text_right {
   display: block;
   text-align: right;
+  padding-right: 20px;
 }
 
 .letter-spacing {
@@ -96,7 +97,7 @@
 .cover__description {
   display: flex;
   justify-content: space-between;
-  margin-top: 147px;
+  margin-top: 140px;
   margin-left: 78px;
   margin-right: 50px;
 }
@@ -262,13 +263,12 @@
 .about__text {
   font-size: 20px;
   line-height: 24px;
-  margin-right: 1px;
+  letter-spacing: 0.005em;
   /*width: 690px;*/
 }
 
 .about_white_space {
   margin-bottom: 24px;
-  margin-right: 4px;
 }
 
 .footer {
@@ -279,6 +279,10 @@
   /*margin-left: 50px;*/
   padding-right: 50px;
   padding-bottom: 88px;
+}
+
+.footer_contacts{
+  margin-right: 0;
 }
 
 .footer__menu {
