@@ -1,18 +1,24 @@
 /* место для вашего кода */
 .header {
-  min-height: 105px;
+  /*min-height: 105px;*/
   margin: 92px 24px 94px 24px;
   display: grid;
-  grid-template-columns: 454px auto 240.52px;
+  grid-template-columns: 1fr min-content 1fr;
+  /*grid-template-columns: 454px auto 240.52px;*/
   font-size: 18px;
   font-weight: 400;
   text-align: left;
 }
 
 .header_menu {
-  min-width: 391.48px;
-  margin: 44px 634px 39px 26.52px;
+  /*min-width: 391.48px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /*margin: 44px 634px 39px 26.52px;*/
 }
+
 .header__links-list {
   display: flex;
   list-style: circle;
@@ -35,7 +41,7 @@
 }
 
 .contacts {
-  width: 240.52px;
+  max-width: 240.52px;
   /*height: 98px;*/
   font-size: 18px;
   /* or 135% */
@@ -50,17 +56,17 @@
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 757px;
+  background-position: center;
+  min-height: 757px;
   /*margin-bottom: 179px;*/
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   position: relative;
+  inset: 0;
 }
 
 .cover-title {
@@ -68,7 +74,7 @@
   padding-top: 165px;
   color: white;
   font-size: 100px;
-  line-height: 120px;
+  line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.3em;
 }
@@ -115,7 +121,8 @@
   margin-top: -12px;
   border: 1px solid white;
   background: transparent;
-  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+ /* text-transform: uppercase;*/
 }
 
 .button-text {
@@ -190,7 +197,7 @@
   margin-right: 40px;
   font-weight: 700;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
 
