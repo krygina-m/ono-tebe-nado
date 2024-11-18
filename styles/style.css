@@ -266,7 +266,7 @@
   color: #000000;
 }
 
-.about__text{
+.about__text {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
