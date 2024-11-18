@@ -1,7 +1,7 @@
 /* место для вашего кода */
 .header {
   /*min-height: 105px;*/
-  margin: 92px 24px 94px 24px;
+  margin: 92px 24px 90px 24px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   /*grid-template-columns: 454px auto 240.52px;*/
@@ -23,7 +23,7 @@
   display: flex;
   list-style: circle;
   font-size: 18px;
-  gap: 30px;
+  gap: 35px;
 }
 
 .header_menu_item_active {
@@ -59,14 +59,18 @@
   background-position: center;
   min-height: 757px;
   /*margin-bottom: 179px;*/
+
+  position: relative;
+  z-index: -2;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   inset: 0;
+  z-index: -1;
 }
 
 .cover-title {
@@ -153,13 +157,16 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 25px;
+  row-gap: 25px;
   list-style: none;
 }
 
 .lost__card-list-item {
   min-height: 563px;
-  min-width: 334px;
+  width: 334px;
   flex-grow: 1;
+  /* position: relative;
+  z-index: -2;*/
 }
 
 .card-link {
@@ -173,22 +180,28 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 334px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+  position: relative;
+  z-index: -2;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
+  /*z-index: -2;*/
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
+  /*z-index: -2;*/
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
+  /*z-index: -2;*/
 }
 
 .card__title {
@@ -212,10 +225,8 @@
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 48px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+ /* position: absolute;
+  bottom: 0px;*/
 }
 
 .lots__look-more-link {
@@ -265,14 +276,16 @@
   color: #000000;
 }
 
-.about__text {
+.about__text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.about__text_style {
   font-size: 20px;
   letter-spacing: 0.005em;
   /*width: 690px;*/
-}
-
-.about_white_space {
-  margin-bottom: 24px;
 }
 
 .footer {
