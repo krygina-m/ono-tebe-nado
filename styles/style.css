@@ -26,7 +26,7 @@
   list-style: none;
 }
 
-.header_menu_item .menu_link_active {
+.header_menu_item .header_menu_link_active {
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@
   background-position: center;
   min-height: 757px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .overlay {
@@ -176,22 +176,19 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  /*z-index: -2;*/
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  /*z-index: -2;*/
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  /*z-index: -2;*/
 }
 
 .card__title {
@@ -227,7 +224,7 @@
   margin-top: 31px;
   text-underline-position: under;
   text-decoration: underline;
-
+  max-width: fit-content;
 }
 
 .about {
